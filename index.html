@@ -26,43 +26,74 @@
     }
     body{
         height: 100vh;
+        padding: 1rem;
     }
   </style>
   <body class="">
-    <div class="btn-group">
-    <button type="button" class="btn btn-danger active" data-bs-toggle="button" aria-pressed="true">ثبت</button>
-    <input type="submit" class="btn btn-danger" value="ویرایش">
-    <a href="#" class="btn btn-danger">حذف</a>
-    <span class="btn btn-outline-danger">ریست</span>
-    </div>
-    <br/>
-    <div class="btn-group" role="group">
-      <input type="checkbox"  id="one" class="btn-check" >
-      <label for="one"  class="btn btn-outline-primary active" >one</label>
-      <input type="checkbox" id="tow" class="btn-check">
-      <label for="tow" class="btn btn-outline-primary">tow</label>
-      <input type="checkbox" id="three" class="btn-check">
-      <label for="three" class="btn btn-outline-primary">three</label>
-    </div>
-    <br/>
-    <div class="btn-group-vertical" role="group">
-      <input type="radio" name="r" id="oneRadio" class="btn-check" checked/>
-      <label class="btn btn-outline-success" for="oneRadio">one</label>
-      <input type="radio" name="r" id="towRadio" class="btn-check" />
-      <label class="btn btn-outline-success" for="towRadio">tow</label>
-      <input type="radio" name="r" id="threeRadio" class="btn-check" />
-      <label class="btn btn-outline-success" for="threeRadio">three</label>
-    </div>
-    <br/>
-    <div class="btn-group btn-group-toggle" data-toggle="buttons">
-      <input type="radio" name="r" id="oneRadio1" class="btn-check" checked/>
-      <label class="btn btn-outline-success" for="oneRadio1">one</label>
-      <input type="radio" name="r" id="towRadio2" class="btn-check" />
-      <label class="btn btn-outline-success" for="towRadio2">tow</label>
-      <input type="radio" name="r" id="threeRadio3" class="btn-check" />
-      <label class="btn btn-outline-success" for="threeRadio3">three</label>
+    <!-- <div class="d-flex justify-content-center">
+      <div class="card shadow w-50 text-center ">
+        <div class="card-header">heading card</div>
+        <div class="card-body">
+          <h3>hi bootstrap</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, quam.</p>
+          <a href="#" class="btn btn-primary">see website</a>
+        </div>
+        <div class="card-footer">toturial bootstrap</div>
+      </div>
+    </div> -->
+
+    <div class="row">
+      
+      <div class="col-12 col-sm-4">
+        <div class="card shadow  ">
+          <img src="assets/image/02.jpg" class="card-img-top"/>
+          <div class="card-img-overlay">
+            <h3 class="card-title text-white">hi bootstrap</h3>
+            <p class="card-text text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, quam.</p>
+            <a href="#" class="btn btn-primary">see website</a>
+          </div>
+          <div class="card-footer d-flex justify-content-start">
+            <i class="fas fa-comment me-2 text-secondary"></i>
+            <i class="fa fa-heart text-danger"></i>
+            
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-sm-4">
+        <div class="card shadow   ">
+          <img src="assets/image/02.jpg" class="card-img-top"/>
+          <div class="card-img-overlay">
+            <h3 class="card-title text-white">hi bootstrap</h3>
+            <p class="card-text text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, quam.</p>
+            <a href="#" class="btn btn-primary">see website</a>
+          </div>
+          <div class="card-footer d-flex justify-content-start">
+            <i class="fas fa-comment me-2 text-secondary"></i>
+            <i class="fa fa-heart text-danger"></i>
+            
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-sm-4">
+        <div class="card shadow   ">
+          <img src="assets/image/02.jpg" class="card-img-top"/>
+          <div class="card-img-overlay">
+            <h3 class="card-title text-white">hi bootstrap</h3>
+            <p class="card-text text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, quam.</p>
+            <a href="#" class="btn btn-primary">see website</a>
+          </div>
+          <div class="card-footer d-flex justify-content-start">
+            <i class="fas fa-comment me-2 text-secondary"></i>
+            <i class="fa fa-heart text-danger"></i>
+            
+          </div>
+        </div>
+      </div>
     </div>
 
+
+
+    
 
     <script
       src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
