@@ -33,22 +33,162 @@
   
   </style>
   <body class="">
-    <div class="progress" style="height: 75px;">
-      <div class="progress-bar bg-danger progress-bar-animated progress-bar-striped" style="width: 50%;">50%</div>
-      <div class="progress-bar bg-primary progress-bar-animated progress-bar-striped" style="width: 10%;">10%</div>
-      <div class="progress-bar bg-warning progress-bar-animated progress-bar-striped" style="width: 15%;">15%</div>
-    </div>
+    <form class="needs-validation" novalidate>
+      <fieldset >
+        <legend>disabled form</legend>
+      <div class="mb-3">
+        <label class="form-label" for="username">Username</label>
+        <input type="text" class="form-control form-control-plaintext form-control-lg" id="username" required/>
+        <p class="form-text">Lorem ipsum dolor sit amet.</p>
+        <div class="valid-feedback">
+          Looks good!
+        </div>
+    
+      </div>
+      <div class="mb-3 input-group ">
+        <span class="input-group-text" id="basic-addon1" >name</span>
+        <input type="text" class="form-control" placeholder="name" aria-label="name" aria-describedby="basic-addon1" required>
+        <span class="input-group-text btn btn-secondary" id="basic-addon1" >
+          nikeash
+        </span>
+        <div class="invalid-feedback">
+          Please enter name.
+        </div>
+    
+      </div>
+      <div class="mb-3 input-group">
+        <div class="input-group-text">
+          <input type="checkbox" class="form-check-input">
+        </div>
+        <input type="text" class="form-control">
+      </div>
+      <div class="mb-3 form-floating">
+       
+        <input type="text" class="form-control" id="float" placeholder="test">
+        <label  for="float">test</label>
+      </div>
+      <div class="form-floating mb-3">
+        <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+        <label for="floatingInput">Email address</label>
+      </div>
+      
+      <div class="mb-3 input-group dropdown">
+        <button type="button" class=" btn btn-outline-secondary dropdown-toggle" data-bs-target="#drop" data-bs-toggle="dropdown">dropdown</button>
+        <ul class="dropdown-menu" id="drop">
+          <li ><a class="dropdown-item" href="#">one</a></li>
+          <li ><a class="dropdown-item" href="#">two</a></li>
+        </ul>
+        <input type="text" class="form-control">
+      </div>
+      <div class="mb-3 input-group">
+        <input type="text" class="form-control" placeholder="example" aria-label="name" aria-describedby="basic-addon1" >
+        <span class="input-group-text" id="basic-addon1" >@example.com</span>
+      </div>
+      <div class="mb-3">
+        <label class="form-label" for="basic-url">Your vanity URL</label>
+        <div class="input-group has-validation">
+          
+          <span class="input-group-text" id="basic-addon1" >https://example.com/users/</span>
+          <input type="text" class="form-control" id="basic-url" placeholder="example" aria-label="name" aria-describedby="basic-addon1" >
+          <div class="invalid-feedback">
+            Please choose a username.
+          </div>
+        </div>
+        <div class="form-text">Lorem ipsum dolor sit amet.</div>
+  
+      </div>
+      <div class="mb-3">
+        <label class="form-label" for="password">password</label>
+        <input type="password" class="form-control form-control-sm " placeholder="password" required minlength="5"  id="password"/>
+        <p class="invalid-feedback">Lorem ipsum dolor sit amet.</p>
+      </div>
+      <div class="mb-3 form-check form-check-reverse">
+        <label class="form-check-label" for="check1">check me out</label>
+        <input type="checkbox" class="form-check-input" id="check1"/>
+        <p class="form-text">Lorem ipsum dolor sit amet.</p>
+      </div>
+      <div class="mb-3">
+        <label class="form-label">disabled select menu</label>
+        <select class="form-select form-select-lg">
+          <option value="">1</option>
+          <option value="">2</option>
+          <option value="">3</option>
+        </select>
+      </div>
+      <div class="mb-3 ">
+        <div class="form-check form-check-inline">
+          <label class="form-check-label">male</label>
+          <input type="radio" class="form-check-input" name="gender"/>
+        </div>
+        <div class="form-check form-check-inline">
+          <label class="form-check-label">famle</label>
+          <input type="radio" class="form-check-input" name="gender"/>
+        </div>
+      </div>
+      <div class="mb-3">
+        <div class="form-check form-switch">
+          <label class="form-check-label">Default switch checkbox input</label>
+          <input type="checkbox" class="form-check-input" checked disabled/>
+        </div>
+      </div>
+      <div class="mb-3">
+        <label for="file1" class="form-label">Default file input example</label>
+        <input type="file" class="form-control"/>
+      </div>
+      <div class="mb-3">
+        <label for="file1" class="form-label">Default file input example</label>
+        <input type="file" class="form-control form-control-lg"/>
+      </div>
+      <div class="mb-3">
+        <label for="file1" class="form-label">Default file input example</label>
+        <input type="file" class="form-control form-control-sm"/>
+      </div>
+      <div class="mb-3">
+        <label class="form-label">color picker</label>
+        <input type="color" class="form-control-color">
+      </div>
+      <div class="mb-3">
+        <label for="dataList" class="form-label">data list</label>
+        <input type="text" list="listdata" id="dataList" class="form-control">
+        <datalist id="listdata">
+          <option value="one">
+          <option value="two">
+          <option value="three">
+        </datalist>
+      </div>
+      <div class="mb-3 form-check">
+        <input type="checkbox" class="btn-check" id="btn-check">
+        <label for="btn-check" class="btn btn-primary">toggle btn</label>
+      </div>
+      <div class="mb-3 form-check form-check-inline">
+        <input type="radio" class="btn-check" name="one" id="btn-check1">
+        <label for="btn-check1" class="btn btn-primary">one</label>
+        <input type="radio" class="btn-check" name="one" id="btn-check2">
+        <label for="btn-check2" class="btn btn-primary">two</label>
+        <input type="radio" class="btn-check" name="one" id="btn-check3">
+        <label for="btn-check3" class="btn btn-primary">three</label>
+      </div>
+      <br/>
+      <div class="mb-3 form-range">
+        <label class="form-label">range</label>
+        <input type="range" class="form-range"/>
+      </div>
 
-    <strong>loading...</strong>
-    <div class="spinner-border text-info">
-    </div>
-    <button type="button" class="btn btn-primary">
+      <button class="btn btn-primary">submit</button>
+    </fieldset>
+    </form>
 
-      <div class="spinner-border spinner-border-sm text-danger"></div>
-      <span class="">loading...</span>
-    </button>
-    <div class="spinner-border text-warning"></div>
-    <div class="spinner-grow text-warning"></div>
+    <div class="row">
+      <div class="col-auto">
+        <label for="password2" class="col-form-label">password</label>
+      </div>
+      <div class="col-auto">
+        <input type="password" id="password2" class="form-control"/>
+      </div>
+      <div class="col-auto">
+        <div class="form-text">Must be 8-20 characters long. </div>
+      </div>
+    </div>
 
 
 
@@ -57,6 +197,28 @@
       integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
       crossorigin="anonymous"
     ></script>
+    
     <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script>
+      // Example starter JavaScript for disabling form submissions if there are invalid fields
+(() => {
+  'use strict'
+
+  // Fetch all the forms we want to apply custom Bootstrap validation styles to
+  const forms = document.querySelectorAll('.needs-validation')
+
+  // Loop over them and prevent submission
+  Array.from(forms).forEach(form => {
+    form.addEventListener('submit', event => {
+      if (!form.checkValidity()) {
+        event.preventDefault()
+        event.stopPropagation()
+      }
+
+      form.classList.add('was-validated')
+    }, false)
+  })
+})()
+    </script>
   </body>
 </html>
