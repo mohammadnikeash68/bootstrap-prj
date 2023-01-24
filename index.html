@@ -27,18 +27,30 @@
     body{
         height: 100vh;
         /* padding: 1rem; */
+        margin: 200px;
     }
    */
   
   </style>
   <body class="">
-    <div class="jumbotron bg-secondary bg-opacity-25 p-5">
-      <div class="container p-5">
-        <h1 class="display-4">toturial bootstrap</h1>
-      <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia eaque porro eos, distinctio ipsum ratione.</p>
-      <hr class="my-5"/>
-      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit consectetur sunt rem expedita laboriosam deleniti dolor eos debitis et ex.</p>
-      <a href="#" class="btn btn-primary btn-lg">see website</a>
+    <div class="btn-group dropstart">
+      <button class="btn btn-secondary" type="button">action</button>
+      <button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split " data-bs-toggle="dropdown"></button>
+      <div class="dropdown-menu ">
+        <span class="dropdown-item active">item1</span>
+        <span class="dropdown-item">item2</span>
+        <hr class="dropdown-divider"/>
+        <span class="dropdown-item">item3</span>
+      </div>
+    </div>
+
+    <div class="dropdown">
+      <button type="button" class="btn btn-secondary  dropdown-toggle-split " data-bs-toggle="dropdown">action</button>
+      <div class="dropdown-menu dropdown-menu-end fade">
+        <span class="dropdown-item active">item1</span>
+        <span class="dropdown-item">item2</span>
+        <hr class="dropdown-divider"/>
+        <span class="dropdown-item">item3</span>
       </div>
     </div>
     
