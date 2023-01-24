@@ -34,16 +34,62 @@
   </style>
   <body class="">
 
-    <button class="btn btn-danger" data-bs-toggle="collapse" data-bs-target="#colap">click</button>
-      <div class="collapse collapse-horizontal" id="colap">
-        <div class="card w-50">
-          <div class="card-header">header</div>
-          <div class="card-body">
-            <img src="assets/image/article1.jpg" class="img-fluid">
-          </div>
-          <div class="card-footer">footer</div>
+   <div class="accordion accordion-flush" id="accordionExample">
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button type="button" class="accordion-button" data-bs-toggle="collapse" data-bs-target="#collapseone">
+          item accordion #item 1
+        </button>
+      </h2>
+      <div class="accordion collapse show" id="collapseone" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi facilis maiores voluptates reiciendis, enim blanditiis doloremque eaque. Laudantium, ut facilis?</p>
+        </div>
+
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button type="button" class="accordion-button" data-bs-toggle="collapse" data-bs-target="#collapsetwo">
+          item accordion #item 1
+        </button>
+      </h2>
+      <div class="accordion collapse " id="collapsetwo" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi facilis maiores voluptates reiciendis, enim blanditiis doloremque eaque. Laudantium, ut facilis?</p>
+        </div>
+
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button type="button" class="accordion-button" data-bs-toggle="collapse" data-bs-target="#collapsethree">
+          item accordion #item 1
+        </button>
+      </h2>
+      <div class="accordion collapse " id="collapsethree" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi facilis maiores voluptates reiciendis, enim blanditiis doloremque eaque. Laudantium, ut facilis?</p>
+        </div>
+
+      </div>
+    </div>
+   </div>
+
+   <div class="accordion" id="myaccordion">
+    <div class="card">
+      <div class="card-header">
+        <button type="button" class="accordion-button" data-bs-toggle="collapse" data-bs-target="#mycollapse1">
+          item 1
+        </button>
+      </div>
+      <div class="collapse" id="mycollapse1" data-bs-parent="#myaccordion">
+        <div class="card-body">
+          Lorem ipsum dolor sit amet.
         </div>
       </div>
+    </div>
+   </div>
     <script
       src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
       integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
