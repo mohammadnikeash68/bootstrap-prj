@@ -10,7 +10,7 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="assets/css/bootstrap.rtl.min.css" />
+    <!-- <link rel="stylesheet" href="assets/css/bootstrap.rtl.min.css" /> -->
     <link
       rel="stylesheet"
       href="assets/fonts/fontawesome-free-6.2.1-web/css/all.min.css"
@@ -26,33 +26,55 @@
     }
     body{
         height: 100vh;
-        padding: 1rem;
+        /* padding: 1rem; */
     }
+   */
+  
   </style>
   <body class="">
     
 
-    <div class="row">
-      <div class="col-4">
-        <div class="list-group">
-          <a href="#html" role="tab" data-bs-toggle="list" class="list-group-item list-group-item-action">html</a>
-          <a href="#css" role="tab" data-bs-toggle="list" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
-            <span>css</span>
-            <span class="badge bg-success">17</span>
-          </a>
-          <a href="#bootstrap" role="tab" data-bs-toggle="list" class="list-group-item list-group-item-action">bootstrap</a>
-          <a href="#javascript" role="tab" data-bs-toggle="list" class="list-group-item list-group-item-action">javascript</a>
+
+    <div id="carouselExampleSlidesOnly" class="carousel slide carousel-fade" data-bs-interval="2000" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleSlidesOnly" data-bs-slide-to="0" class="active"></button>
+        <button type="button" data-bs-target="#carouselExampleSlidesOnly" data-bs-slide-to="1"></button>
+        <button type="button" data-bs-target="#carouselExampleSlidesOnly" data-bs-slide-to="2"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="assets/image/slider/01.jpg" class="d-block w-100" width="800" height="400" alt="...">
+          <!-- <svg class="bd-placeholder-img bd-placeholder-img-lg d-block w-100" width="800" height="400" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Second slide" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#666"></rect><text x="50%" y="50%" fill="#444" dy=".3em">Second slide</text></svg> -->
+          <div class="carousel-caption d-none d-md-block">
+            <h3>caption slider 1</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur, cum!</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="assets/image/slider/02.jpg" class="d-block w-100" width="800" height="400" alt="...">
+          <!-- <svg class="bd-placeholder-img bd-placeholder-img-lg d-block w-100" width="800" height="400" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Second slide" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#666"></rect><text x="50%" y="50%" fill="#444" dy=".3em">Second slide</text></svg> -->
+          <div class="carousel-caption">
+            <h3>caption slider 2</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur, cum!</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="assets/image/slider/03.jpg" class="d-block w-100" width="800" height="400" alt="...">
+          <!-- <svg class="bd-placeholder-img bd-placeholder-img-lg d-block w-100" width="800" height="400" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Second slide" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#666"></rect><text x="50%" y="50%" fill="#444" dy=".3em">Second slide</text></svg> -->
+          <div class="carousel-caption">
+            <h3>caption slider 3</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur, cum!</p>
+          </div>
         </div>
       </div>
-      <div class="col-8">
-        <div class="tab-content">
-          <div class="tab-pane  active show fade" id="html" >html ipsum dolor sit amet, consectetur adipisicing elit. Magni, pariatur!</div>
-          <div class="tab-pane  fade" id="css" >css ipsum dolor sit amet, consectetur adipisicing elit. Magni, pariatur!</div>
-          <div class="tab-pane  fade" id="bootstrap" >bootstrap ipsum dolor sit amet, consectetur adipisicing elit. Magni, pariatur!</div>
-          <div class="tab-pane  fade" id="javascript" >javascript ipsum dolor sit amet, consectetur adipisicing elit. Magni, pariatur!</div>
-        </div>
-      </div>
+      <button class="carousel-control-prev" type="button" data-bs-slide="prev" data-bs-target="#carouselExampleSlidesOnly">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-slide="next"  data-bs-target="#carouselExampleSlidesOnly">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      </button>
     </div>
+   
     
 
     <script
