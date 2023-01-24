@@ -27,40 +27,23 @@
     body{
         height: 100vh;
         /* padding: 1rem; */
-        /* margin: 200px; */
+        margin: 200px;
     }
    
   
   </style>
   <body class="">
-  
-    <div class="toast" id="mytoast">
-      <div class="toast-header">
-        <img class="rounded-circle" src="assets/image/avatar.png" width="30px">
-        <strong class="me-auto">bootstrap</strong>
-        <small >8 min ago</small>
-        <button type="button" class="btn-close" data-bs-dismiss="toast"></button>
-      </div>
-      <div class="toast-body">
-        whats up ????
-      </div>
-    </div>
 
-    <button type="button" id="livetoastbtn" class="btn btn-primary">toast</button>
-    <div class="toast-container position-fixed top-0 end-0 ">
-      <div class="toast" id="livetoast">
-        <div class="toast-header">
-          <img class="rounded-circle" src="assets/image/avatar.png" width="30px">
-        <strong class="me-auto">bootstrap</strong>
-        <small >8 min ago</small>
-        <button type="button" class="btn-close" data-bs-dismiss="toast"></button>
-        </div>
-        <div class="toast-body">
-          whats up ????
+    <button class="btn btn-danger" data-bs-toggle="collapse" data-bs-target="#colap">click</button>
+      <div class="collapse collapse-horizontal" id="colap">
+        <div class="card w-50">
+          <div class="card-header">header</div>
+          <div class="card-body">
+            <img src="assets/image/article1.jpg" class="img-fluid">
+          </div>
+          <div class="card-footer">footer</div>
         </div>
       </div>
-    </div>
-
     <script
       src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
       integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
@@ -69,20 +52,7 @@
     
     <script src="assets/js/bootstrap.bundle.min.js"></script>
     <script>
-      let toast = document.getElementsByClassName('toast');
-      console.log(toast);
-      toast[0].style.display="block"
-      // $('#mytoast').toast("show")
 
-      const toastTrigger = document.getElementById('livetoastbtn')
-const toastLiveExample = document.getElementById('livetoast')
-if (toastTrigger) {
-  toastTrigger.addEventListener('click', () => {
-    const toast = new bootstrap.Toast(toastLiveExample)
-
-    toast.show()
-  })
-}
 
     </script>
   </body>
