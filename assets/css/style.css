@@ -5,3 +5,20 @@
     url('../fonts/yekan/BYekan-webfont.woff') format('woff');
     font-weight: normal;
 }
+body{
+    font-family: "BYekan";
+    direction: rtl;
+    text-align: right;
+   
+}
+.navbar-collapse .dropdown-menu[data-bs-popper]{
+    right: 0 !important;
+    left: unset !important;
+}
+.dropdown-toggle::after{
+    margin-left: unset !important;
+    margin-right: .255em;
+}
+.transition{
+    transition: all 3s ease-in;
+}
